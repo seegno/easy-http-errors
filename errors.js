@@ -1,0 +1,48 @@
+
+/**
+ * Export `errors`.
+ */
+
+module.exports = [
+  { message: 'Bad request', name: 'BadRequestError', status: 400 },
+  { message: 'Unauthorized', name: 'UnauthorizedError', status: 401 },
+  { message: 'Payment required', name: 'PaymentRequiredError', status: 402 },
+  { message: 'Forbidden', name: 'ForbiddenError', status: 403 },
+  { message: 'Not Found', name: 'NotFoundError', status: 404 },
+  { message: 'Method Not Allowed', name: 'MethodNotAllowedError', status: 405 },
+  { message: 'Not Acceptable', name: 'NotAcceptableError', status: 405 },
+  { message: 'Proxy Authentication Required', name: 'ProxyAuthenticationRequiredError', status: 407 },
+  { message: 'Request Timeout', name: 'RequestTimeoutError', status: 408 },
+  { message: 'Conflict', name: 'ConflictError', status: 409 },
+  { message: 'Gone', name: 'GoneError', status: 410 },
+  { message: 'Length Required', name: 'LengthRequiredError', status: 411 },
+  { message: 'Precondition Failed', name: 'PreconditionFailedError', status: 412 },
+  { message: 'Payload Too Large', name: 'PayloadTooLargeError', status: 413 },
+  { message: 'URI Too Long', name: 'URITooLongError', status: 414 },
+  { message: 'Unsupported Media Type', name: 'UnsupportedMediaTypeError', status: 415 },
+  { message: 'Range Not Satisfiable', name: 'RangeNotSatisfiableError', status: 416 },
+  { message: 'Expectation Failed', name: 'ExpectationFailedError', status: 417 },
+  { message: 'I\'m A Tea pot', name: 'ImATeapotError', status: 418 },
+  { message: 'Misdirected Request', name: 'MisdirectedRequestError', status: 421 },
+  { message: 'Unprocessable Entity', name: 'UnprocessableEntityError', status: 422 },
+  { message: 'Locked', name: 'LockedError', status: 423 },
+  { message: 'Failed Dependency', name: 'FailedDependencyError', status: 424 },
+  { message: 'Unordered Collection', name: 'UnorderedCollectionError', status: 425 },
+  { message: 'Upgrade Required', name: 'UpgradeRequiredError', status: 426 },
+  { message: 'Precondition Required', name: 'PreconditionRequiredError', status: 428 },
+  { message: 'Too Many Requests', name: 'TooManyRequestsError', status: 429 },
+  { message: 'Request Header Fields Too Large', name: 'RequestHeaderFieldsTooLargeError', status: 431 },
+  { message: 'Unavailable For Legal Reasons', name: 'UnavailableForLegalReasonsError', status: 451 },
+  { message: 'Internal Server Error', name: 'InternalServerError', status: 500 },
+  { message: 'Not Implemented', name: 'NotImplementedError', status: 501 },
+  { message: 'Bad Gateway', name: 'BadGatewayError', status: 502 },
+  { message: 'Service Unavailable', name: 'ServiceUnavailableError', status: 503 },
+  { message: 'Gateway Timeout', name: 'GatewayTimeoutError', status: 504 },
+  { message: 'HTTP Version Not Supported', name: 'HTTPVersionNotSupportedError', status: 505 },
+  { message: 'Variant Also Negotiates', name: 'VariantAlsoNegotiatesError', status: 506 },
+  { message: 'Insufficient Storage', name: 'InsufficientStorageError', status: 507 },
+  { message: 'Loop Detected', name: 'LoopDetectedError', status: 508 },
+  { message: 'Bandwidth Limit Exceeded', name: 'BandwidthLimitExceededError', status: 509 },
+  { message: 'Not Extended', name: 'NotExtendedError', status: 510 },
+  { message: 'Network Authentication Required', name: 'NetworkAuthenticationRequiredError', status: 511 }
+];
