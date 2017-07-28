@@ -1,0 +1,69 @@
+{
+  "name": "easy-http-errors",
+  "version": "0.0.0",
+  "description": "Easy HTTP errors",
+  "keywords": [
+    "easy",
+    "easy-http-errors",
+    "errors",
+    "http",
+    "http-errors"
+  ],
+  "homepage": "https://github.com/seegno/easy-http-errors",
+  "bugs": {
+    "url": "https://github.com/seegno/easy-http-errors/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Seegno",
+    "email": "projects@seegno.com",
+    "url": "https://seegno.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seegno/easy-http-errors.git"
+  },
+  "scripts": {
+    "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
+    "cover": "jest --coverage --forceExit",
+    "lint": "eslint index.js errors.js test",
+    "lint-staged": "lint-staged",
+    "test": "jest --forceExit",
+    "test-watch": "jest --watch --onlyChanged",
+    "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "dependencies": {
+    "standard-http-error": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-seegno": "^9.0.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "pre-commit": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=4.2"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "html",
+      "lcov",
+      "text"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(test/.*\\.test.js)$"
+  },
+  "lint-staged": {
+    "{index.js,errors.js,test/index.test.js}": [
+      "eslint",
+      "git add",
+      "jest --findRelatedTests --forceExit"
+    ]
+  }
+}

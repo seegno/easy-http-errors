@@ -1,0 +1,4 @@
+.eslintrc.yml
+.gitignore
+.travis.yml
+/test
