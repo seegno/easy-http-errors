@@ -26,6 +26,7 @@
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
     "cover": "jest --coverage --forceExit",
+    "coveralls": "npm run cover && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint index.js errors.js test",
     "lint-staged": "lint-staged",
     "test": "jest --forceExit",
@@ -39,6 +40,7 @@
     "standard-http-error": "^2.0.0"
   },
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
     "eslint-config-seegno": "^9.0.0",
     "eslint-plugin-jest": "^20.0.3",
