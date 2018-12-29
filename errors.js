@@ -10,7 +10,7 @@ module.exports = [
   { message: 'Forbidden', name: 'ForbiddenError', status: 403 },
   { message: 'Not Found', name: 'NotFoundError', status: 404 },
   { message: 'Method Not Allowed', name: 'MethodNotAllowedError', status: 405 },
-  { message: 'Not Acceptable', name: 'NotAcceptableError', status: 405 },
+  { message: 'Not Acceptable', name: 'NotAcceptableError', status: 406 },
   { message: 'Proxy Authentication Required', name: 'ProxyAuthenticationRequiredError', status: 407 },
   { message: 'Request Timeout', name: 'RequestTimeoutError', status: 408 },
   { message: 'Conflict', name: 'ConflictError', status: 409 },
